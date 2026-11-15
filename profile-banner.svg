@@ -1,56 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="300" viewBox="0 0 1040 300" role="img" aria-labelledby="title desc">
-  <title id="title">Li Fenyong · Applied AI Engineer</title>
-  <desc id="desc">Dark navy profile banner with cyan type and a branching circuit motif.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="328" viewBox="0 0 1040 328" role="img" aria-labelledby="title desc">
+  <title id="title">Li Fenyong — Applied AI Engineer</title>
+  <desc id="desc">Dark interface with a luminous animated agent network in cyan and violet.</desc>
   <defs>
-    <linearGradient id="bg" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#070e1a"/><stop offset="1" stop-color="#0b1e32"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop stop-color="#138eaa" stop-opacity=".28"/><stop offset="1" stop-color="#138eaa" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="line" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop stop-color="#42dcca" stop-opacity=".08"/><stop offset="1" stop-color="#64e7ff" stop-opacity=".85"/>
-    </linearGradient>
-    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
-      <path d="M25 0H0V25" fill="none" stroke="#8cd4fd" stroke-opacity=".095"/>
-    </pattern>
-    <clipPath id="frame"><rect width="1040" height="300" rx="18"/></clipPath>
+    <linearGradient id="bg" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#070d1a"/><stop offset="1" stop-color="#13152f"/></linearGradient>
+    <linearGradient id="spectrum"><stop stop-color="#55f9e2"/><stop offset=".48" stop-color="#62d6ff"/><stop offset="1" stop-color="#aa83ff"/></linearGradient>
+    <linearGradient id="trace"><stop stop-color="#2cd9e1"/><stop offset="1" stop-color="#aa83ff"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#419ae8" stop-opacity=".20"/><stop offset="1" stop-color="#419ae8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violet"><stop stop-color="#865bf2" stop-opacity=".28"/><stop offset="1" stop-color="#865bf2" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#b3caff" opacity=".24"/></pattern>
+    <clipPath id="frame"><rect width="1040" height="328" rx="18"/></clipPath>
+    <style>
+      .pulse { animation: travel 4.6s linear infinite; }
+      .late { animation-delay: -1.6s; }
+      .later { animation-delay: -3.1s; }
+      .ring { transform-origin: 746px 162px; animation: signal 2.8s ease-out infinite; }
+      .spin { transform-origin: 746px 162px; animation: orbit 14s linear infinite; }
+      @keyframes travel { from {stroke-dashoffset: 238;} to {stroke-dashoffset: -844;} }
+      @keyframes signal { 0% {transform:scale(.68);opacity:.7;} 90%,100% {transform:scale(1.48);opacity:0;} }
+      @keyframes orbit { to {transform:rotate(360deg);} }
+      @media (prefers-reduced-motion: reduce) { .pulse,.spin,.ring { animation: none; } .ring {opacity:.30;} }
+    </style>
   </defs>
   <g clip-path="url(#frame)">
-    <rect width="1040" height="300" fill="url(#bg)"/>
-    <ellipse cx="810" cy="140" rx="280" ry="192" fill="url(#glow)"/>
-    <path d="M565 0h475v300H565z" fill="url(#grid)"/>
-    <g fill="none" stroke="url(#line)" stroke-width="1.7">
-      <path d="M563 151h163l43-43h112l55-55h104"/>
-      <path d="M563 151h163l43 43h112l55 55h104"/>
-      <path d="M589 151h451"/>
-      <path d="M678 109h47l35-35h69l38-38h62"/>
-      <path d="M678 193h47l35 35h69l38 38h62"/>
+    <rect width="1040" height="328" fill="url(#bg)"/>
+    <ellipse cx="738" cy="148" rx="281" ry="193" fill="url(#aura)"/>
+    <ellipse cx="982" cy="233" rx="230" ry="236" fill="url(#violet)"/>
+    <path d="M573 30h438v270H573z" fill="url(#dots)" opacity=".61"/>
+    <path d="M36 70V36h37M1004 70V36h-37M36 257v35h37M1004 257v35h-37" fill="none" stroke="url(#spectrum)" stroke-opacity=".69" stroke-width="1.4"/>
+    <path d="M62 235h452" stroke="#b6d2ff" opacity=".21"/>
+    <path d="M62 235h74" stroke="url(#spectrum)" stroke-width="2"/>
+    <rect x="62" y="58" width="230" height="29" rx="14.5" fill="#0f2336" stroke="#3edbd1" stroke-opacity=".33"/>
+    <circle cx="78" cy="72.5" r="3.1" fill="#55f9e2"/>
+    <g font-family="DejaVu Sans Mono, Consolas, monospace" font-weight="700">
+      <text x="91" y="77" font-size="13" letter-spacing="1.8" fill="#adebe9">ENGINEERING PORTFOLIO</text>
+      <text x="65" y="210" font-size="24" letter-spacing="2" fill="url(#spectrum)">APPLIED AI ENGINEER</text>
+      <text x="65" y="269" font-size="14" letter-spacing=".9" fill="#c4d0e9">AGENT SYSTEMS  /  RETRIEVAL  /  MULTIMODAL AI</text>
+      <text x="971" y="64" text-anchor="end" font-size="10" letter-spacing="2" fill="#aec8ef">WORKFLOW</text>
+      <text x="915" y="98" font-size="11" fill="#bcd6f9">TOOLS</text>
+      <text x="915" y="166" font-size="11" fill="#bcd6f9">SEARCH</text>
+      <text x="915" y="234" font-size="11" fill="#bcd6f9">CONTEXT</text>
     </g>
-    <g fill="#122b3d" stroke="#66ecf0">
-      <circle cx="726" cy="151" r="6" stroke-width="2"/>
-      <circle cx="881" cy="108" r="5"/>
-      <circle cx="881" cy="194" r="5"/>
-      <circle cx="829" cy="74" r="3"/>
-      <circle cx="829" cy="228" r="3"/>
-      <circle cx="936" cy="151" r="5"/>
+    <text x="60" y="163" font-size="83" font-weight="700" letter-spacing="-3" fill="#f6f8ff" font-family="DejaVu Sans, Verdana, sans-serif">Li Fenyong</text>
+    <g fill="none" stroke="url(#trace)" stroke-width="1.5" opacity=".47">
+      <path d="M583 162h113m100-25 50-43h55m-105 68h105m-105 25 50 43h55"/>
+      <circle cx="746" cy="162" r="59"/>
+      <circle cx="746" cy="162" r="78" stroke-dasharray="2 7"/>
     </g>
-    <g fill="none" stroke="#66ecf0" stroke-opacity=".25">
-      <circle cx="726" cy="151" r="14"/>
-      <circle cx="726" cy="151" r="24"/>
-      <circle cx="936" cy="151" r="12"/>
+    <circle class="ring" cx="746" cy="162" r="56" fill="none" stroke="#71f6ec" stroke-width="1.3"/>
+    <circle class="spin" cx="746" cy="162" r="70" fill="none" stroke="url(#trace)" stroke-width="3" stroke-linecap="round" stroke-dasharray="62 378" opacity=".92"/>
+    <g fill="none" stroke-width="3.8" stroke-linecap="round" stroke-dasharray="30 511">
+      <path class="pulse" d="M583 162h115" stroke="#73fff0"/>
+      <path class="pulse late" d="M796 137l50-43h55" stroke="#9cebff"/>
+      <path class="pulse later" d="M796 162h105" stroke="#b59eff"/>
+      <path class="pulse late" d="M796 187l50 43h55" stroke="#a686ff"/>
     </g>
-    <g fill="none" stroke="#55e4db" stroke-width="2" opacity=".75">
-      <path d="M26 54V26h28"/><path d="M1014 54V26h-28"/>
-      <path d="M26 246v28h28"/><path d="M1014 246v28h-28"/>
-    </g>
-    <g font-family="DejaVu Sans Mono, Consolas, monospace">
-      <text x="69" y="182" font-size="23" font-weight="700" fill="#73f4e0">APPLIED AI ENGINEER</text>
-      <text x="69" y="242" font-size="17" fill="#bacbdf">AGENTS  /  RETRIEVAL  /  LLM SYSTEMS</text>
-    </g>
-    <text x="65" y="130" font-size="77" font-weight="700" letter-spacing="-2" fill="#f2f7ff" font-family="DejaVu Sans, Verdana, sans-serif">Li Fenyong</text>
-    <path d="M69 211h388" stroke="#64e7ff" stroke-opacity=".28"/>
-    <path d="M69 211h42" stroke="#64e7ff" stroke-width="2"/>
-    <rect x=".65" y=".65" width="1038.7" height="298.7" rx="17.35" fill="none" stroke="#326176" stroke-width="1.3"/>
+    <path d="M746 118l38 22v44l-38 22-38-22v-44z" fill="#10283e" stroke="url(#spectrum)" stroke-width="1.5"/>
+    <path d="M726 162h40m-20-20v40m-13-33 26 26m0-26-26 26" stroke="#7ce4f5" stroke-width="1.2" stroke-linecap="round" opacity=".56"/>
+    <circle cx="746" cy="162" r="5" fill="#a7fff4"/>
+    <g stroke-width="1.8"><circle cx="583" cy="162" r="4" fill="#102b3c" stroke="#5df5de"/><circle cx="901" cy="94" r="4" fill="#191b37" stroke="#aed0ff"/><circle cx="901" cy="162" r="4" fill="#191b37" stroke="#aeabff"/><circle cx="901" cy="230" r="4" fill="#191b37" stroke="#bd97ff"/></g>
+    <rect x=".65" y=".65" width="1038.7" height="326.7" rx="17.35" fill="none" stroke="#4d537c" stroke-width="1.3"/>
   </g>
 </svg>

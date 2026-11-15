@@ -1,31 +1,42 @@
 <p align="center">
-  <img src="./profile-banner.svg" width="100%" alt="Li Fenyong — Applied AI Engineer · Agentic AI · LLM Systems">
+  <img src="./profile-banner.svg" width="100%" alt="Li Fenyong — Applied AI Engineer">
 </p>
 
-I build **AI agents that break down complex tasks, retrieve the right evidence, and call the right tools**. My work spans multi-agent decision support, hybrid retrieval, and context-aware AR learning.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;duration=3200&amp;pause=1000&amp;color=0D9488&amp;center=true&amp;vCenter=true&amp;width=425&amp;height=35&amp;lines=%3E+Orchestrating+AI+agents;%3E+Building+hybrid+retrieval;%3E+Developing+AR+tutors" width="425" alt="Orchestrating AI agents · Building hybrid retrieval · Developing AR tutors">
+</p>
 
-<sub>MSc Computer Science (Applied Computing) · Universiti Malaya</sub>
+<p align="center">
+  <a href="#selected-systems">Selected systems</a> ·
+  <a href="#public-code--research">Public code &amp; research</a>
+</p>
 
-## Selected work
+I build **tool-using agents and retrieval systems** for tasks that need more than one LLM call. My research at **Universiti Malaya** explores how scene-aware AR can support spoken English practice.
 
-### 01 · Multi-agent decision support
+## Selected systems
 
-Built a LangGraph supervisor that breaks requests into steps and routes them to specialist agents. The agents use ReAct-style tool calls to gather evidence and work through each subtask.
+### 01 / Multi-agent decision support
+
+Built a LangGraph supervisor to split requests into subtasks and route them to specialist agents. Each specialist uses ReAct-style tool calls to gather evidence for its part of the task.
 
 `LangGraph` · `ReAct` · `Python` · `Tool calling`
 
-### 02 · Hybrid knowledge retrieval
+### 02 / Hybrid knowledge retrieval
 
-Combined BM25 keyword search with pgvector semantic retrieval in Neon. Added a reranking stage to surface the most relevant passages before passing them to the LLM.
+Combined **BM25** for exact keyword matches with **pgvector** for semantic matches. A **gte reranker** reorders the candidates before the strongest passages are passed to the LLM.
 
-`BM25` · `PostgreSQL / pgvector` · `Neon` · `Reranking`
+`BM25` · `Neon Postgres` · `pgvector` · `gte-reranker`
 
-### 03 · Mobile AR English Tutor
+### 03 / Mobile AR English Tutor
 
-A research project that uses the learner’s surroundings as context for spoken English practice. The mobile app combines scene context and learner input to generate dialogue for everyday scenarios, then presents it as text and speech.
+Developed a Unity research app that uses the learner’s surroundings and input to create spoken practice scenarios. For example, the app can use the café scene as context for a conversation about ordering a drink. The app presents the dialogue as text and speech.
 
 `Unity` · `AR Foundation` · `LLM dialogue` · `Text-to-speech`
 
----
+## Public code & research
 
-<sub>Interested in how agents behave when tools fail, retrieval gets noisy, or a task needs more than one step.</sub>
+- [AI-Agent](https://github.com/meiyingg/AI-Agent) — TypeScript agent repository
+- [Medical VQA study](https://github.com/meiyingg/From-Classification-to-Generation-A-Comparative-Study-of-Med-VQA-Models) — comparison of classification and generative approaches to medical visual question answering
+- [AR Group Assignment](https://github.com/meiyingg/AR-Group-Assignment) — C++ augmented reality coursework
+
+<sub>Typing animation by <a href="https://github.com/DenverCoder1/readme-typing-svg">Readme Typing SVG</a>.</sub>
