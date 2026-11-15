@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./profile-banner.svg" width="100%" alt="Li Fenyong — Applied AI Engineer">
+  <img src="./ai-workflow.svg" width="100%" alt="Li Fenyong — Applied AI Engineer">
 </p>
 
 <p align="center">
