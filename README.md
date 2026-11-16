@@ -11,25 +11,25 @@
   <a href="#public-code--research">Public code &amp; research</a>
 </p>
 
-I build **tool-using agents and retrieval systems** for tasks that need more than one LLM call. My research at **Universiti Malaya** explores how scene-aware AR can support spoken English practice.
+**I build the systems around the model.** I take AI projects from architecture to implementation, building the orchestration, retrieval, and interfaces that turn a model call into a working application.
 
 ## Selected systems
 
 ### 01 / Multi-agent decision support
 
-Built a LangGraph supervisor to split requests into subtasks and route them to specialist agents. Each specialist uses ReAct-style tool calls to gather evidence for its part of the task.
+**Independently built an end-to-end decision-support system.** A LangGraph supervisor breaks down complex requests and routes subtasks to specialist agents. I built a modular tool library so those agents can gather evidence and work through each step using ReAct.
 
 `LangGraph` · `ReAct` · `Python` · `Tool calling`
 
 ### 02 / Hybrid knowledge retrieval
 
-Combined **BM25** for exact keyword matches with **pgvector** for semantic matches. A **gte reranker** reorders the candidates before the strongest passages are passed to the LLM.
+**Built a hybrid RAG pipeline around a practical trade-off:** keyword search finds exact terms, while vector search finds alternate phrasings. I combined BM25 with pgvector on Neon and added a gte reranker to select the passages that reach the model.
 
 `BM25` · `Neon Postgres` · `pgvector` · `gte-reranker`
 
 ### 03 / Mobile AR English Tutor
 
-Developed a Unity research app that uses the learner’s surroundings and input to create spoken practice scenarios. For example, the app can use the café scene as context for a conversation about ordering a drink. The app presents the dialogue as text and speech.
+**Turned real-world scenes into conversation practice.** For my research at Universiti Malaya, I built a Unity app that combines scene context and learner input to generate dialogue and deliver it as text and speech. A café scene, for example, becomes practice for ordering a drink.
 
 `Unity` · `AR Foundation` · `LLM dialogue` · `Text-to-speech`
 
